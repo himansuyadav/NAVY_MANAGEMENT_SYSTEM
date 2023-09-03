@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container" style="width:100%;height: 1000px;" >
+        <img src="image1.jpg" style="width:100%;height: 1000px;" id="hero_img">
+        <h1 id="current-time"></h1>
+        <div class="quotes">
+            <h1>INDIAN NAVY</h1>
+            <br>
+            <br>
+           <a href="./home.html" style="margin-top: 3rem;"> <button type="button" class="btn btn-success" >WELCOME</button></a>
+            <h2 style="margin-top:20rem"> "May the Lord of Water be auspicious on us("शं नो वरुणः)</h2>
+        </div>
+    </div>
+
+
+<script>
+    let time = document.getElementById("current-time");
+
+
+    setInterval(() =>{
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();},1000)
+    
+
+</script>
+</body>
+</html>
